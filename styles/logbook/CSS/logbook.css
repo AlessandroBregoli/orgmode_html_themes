@@ -27,6 +27,10 @@ body {
     color: var(--fg);
 }
 
+a {
+    color: var(--c5);
+}
+
 .title{
     color: var(--c4);
     text-align: center;
