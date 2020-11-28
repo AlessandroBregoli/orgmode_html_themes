@@ -36,22 +36,45 @@ a {
     text-align: center;
 }
 
+#main_container {
+    height: 90vh;
+    width: 100%
+}
+
 #table-of-contents {
     float: left;
-    width: 25%;
+    width: 24%;
+    height: 100%;
     text-align: center;
+    border-right: 1px solid var(--c15);
+    margin-right: 0.5%;
+    overflow-y: auto;
+
 }
 
 #content {
     display: none;
     float: left;
-    width: 75%;
+    width: 74%;
 }
 
 
 #content_visible {
     float: left;
-    width: 75%;
+    width: 74%;
+    max-height: 100%;
+    padding: 0.5%;
+    overflow-y: auto;
+}
+
+#content_visible::-webkit-scrollbar{
+    -webkit-overflow-scrolling: auto;
+    width: 8px;
+}
+
+#content_visible::-webkit-scrollbar-thumb{
+    border-radius: 4px;
+    background-color: var(--c8);
 }
 
 #table-of-contents ul {
@@ -110,8 +133,10 @@ div.outline-6 h6{
 
 
 #postamble {
- clear: both;
- padding-bottom: 1em;
- border-top: 1px solid var(--c8);
- text-align: center;
+    height: 1vh;
+    clear: both;
+    padding-bottom: 1em;
+    border-top: 1px solid var(--c15);
+    text-align: center;
+    font-size: small;
 }
