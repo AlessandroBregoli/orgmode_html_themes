@@ -49,18 +49,16 @@ a {
     border-right: 1px solid var(--c15);
     margin-right: 0.5%;
     overflow-y: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 
 }
 
 #table-of-contents::-webkit-scrollbar{
-    -webkit-overflow-scrolling: auto;
-    width: 8px;
+    display: none;
 }
 
-#table-of-contents::-webkit-scrollbar-thumb{
-    border-radius: 4px;
-    background-color: var(--c8);
-}
+
 #content {
     display: none;
     float: left;
@@ -70,36 +68,39 @@ a {
 
 #content_visible {
     float: left;
-    width: 74%;
+    width: 70%;
     max-height: 100%;
     padding: 0.5%;
     overflow-y: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 #content_visible::-webkit-scrollbar{
-    -webkit-overflow-scrolling: auto;
-    width: 8px;
+    display: none
 }
 
-#content_visible::-webkit-scrollbar-thumb{
-    border-radius: 4px;
-    background-color: var(--c8);
-}
 
 #table-of-contents ul {
     padding-left: 1em;
     text-align: left;
 }
+
 #table-of-contents li {
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    #text-overflow: ellipsis;
+    #white-space: nowrap;
     overflow: hidden;
 }
-
 
 #table-of-contents  a {
     text-decoration: none;
     color: var(--c6);
+}
+
+.toc_active {
+    text-decoration: none;
+    background-color: var(--c15) !important;
+    color: var(--bg) !important;
 }
 
 div.outline-1 h1{
@@ -136,7 +137,6 @@ div.outline-6 h6{
 }
 
 .tag{
-    background-color: var(--bg);
     border: 1px dashed var(--c7);
 }
 
