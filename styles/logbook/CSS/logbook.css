@@ -52,6 +52,15 @@ a {
 
 }
 
+#table-of-contents::-webkit-scrollbar{
+    -webkit-overflow-scrolling: auto;
+    width: 8px;
+}
+
+#table-of-contents::-webkit-scrollbar-thumb{
+    border-radius: 4px;
+    background-color: var(--c8);
+}
 #content {
     display: none;
     float: left;
