@@ -1,0 +1,19 @@
+#+TITLE: Logbook example
+#+SETUPFILE: setup/logbook-theme-local.setup
+
+* Header ciccione
+lorem ipsum non lo ricordo quindi invento
+lorem ipsum non lo ricordo quindi invento
+** TODO header :PROVA:
+** DONE TODO header 2
+CLOSED: [2020-11-27 ven 16:22]
+** TODO Eader lungo lungo lungo lungo ma lungo fess
+*** Codice
+#+begin_src python
+import maggia
+
+for x in range(10):
+    maggia.potente()
+#+end_src
+*** Equazioni
+$f(x,y) =\frac{x}{y}\cdot \sum ^N _i x$

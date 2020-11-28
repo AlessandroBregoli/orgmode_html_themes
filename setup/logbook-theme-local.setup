@@ -1,0 +1,5 @@
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="styles/logbook/CSS/logbook.css"/>
+#+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+#+HTML_HEAD: <script src="styles/logbook/JS/logbook.js"></script>
+#+OPTIONS: html-style:nil
